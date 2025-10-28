@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Github, Users, UserMinus } from "lucide-react";
+import Link from "next/link";
 
 export function Navbar() {
   return (
@@ -10,6 +11,11 @@ export function Navbar() {
         <div className="flex items-center space-x-2">
           <Github className="h-6 w-6" />
           <span className="font-semibold">GitHub Unfollow Tool</span>
+        </div>
+        <div className=" ml-10 flex space-x-4 ">
+          <Link href={"/tips"} className="ml-8 text-black hover:underline ">
+            <h1>Tips</h1>
+          </Link>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <div className="flex items-center space-x-2 text-sm text-muted-foreground">
